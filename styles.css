@@ -1,0 +1,242 @@
+	/* Meeting Meter Stylesheet */
+	/* David Lau */
+
+/* Global Overrides */
+
+html, body {
+	height: 100%;
+	font-family: 'Lato', sans-serif;	
+	background-color: #eeeeee;	
+}
+
+h1 {
+	color: white;
+	font-size: 3em;
+	font-weight: 600;
+}
+h2 {
+	color: white;
+	font-size: 1.5em;
+	font-weight: 300;
+}
+h3 {
+	font-weight: 600;
+}
+h4 {
+	font-weight: 300;
+	font-size: 1.1em;
+	line-height: 1.4em;	
+
+}
+.container {
+	/*height: 100%; */
+}
+
+/* Global Styles */
+
+.fullHeight {
+	display: block;
+	height: 100%;
+}
+.halfHeight {
+	display: block;
+	height: 50%;
+}
+
+.vertical_mid {
+  	position: relative;
+  	top: 50%;
+  	-webkit-transform:  translateY(-50%);
+  	-ms-transform:  translateY(-50%);
+  	-o-transform:  translateY(-50%);
+  	transform:  translateY(-50%);
+}
+
+/*.vcenter {
+    display: flex;
+    align-items: center;
+}*/
+
+@media (max-width : 640px) {
+	.col-single {
+		padding-left:5em; 
+		padding-right:5em;
+		width: 100%;
+	}
+}
+.overflow_hidden {
+	position: relative;
+	overflow: hidden;
+}
+/* Button Styles */
+
+.btn-white {
+	background-color: transparent;
+	border-radius: 5px;
+	border-color: white;
+	color: white;	
+	-webkit-transition: background-color 0.5s; ;
+	-o-transition: background-color 0.5s; ;
+	transition: background-color 0.5s; ;
+}
+.btn-hero {
+	padding: 0.8em 2em;    
+}
+
+.btn-white:hover, .btn-white:focus {
+	background-color: white;
+	border-color: white;	
+	color: #00a89d;
+}
+
+/* Header Nav Styles */
+
+.navbar-brand {
+	background-image: url("images/logo_white.png");
+	width: 210px;
+    background-repeat: no-repeat;
+	top: 4px;
+    position: absolute;
+}
+.navbar_custom {
+	width:100%;	
+	position: fixed;
+	z-index: 4;
+}
+.navbar_custom li a {
+	color: white;
+	font-weight: 400;
+	border-top: 3px solid transparent;
+	-webkit-transition: border-top .15s ease-in-out;
+	-o-transition: border-top .15s ease-in-out;
+	transition: border-top .15s ease-in-out;
+
+}
+.affix {
+  	background-color: white;
+  	border-bottom: 1px solid #e2e2e2;  	
+	-webkit-transition:  background-color 0.25s;
+	-o-transition:  background-color 0.25s;
+	transition:  background-color 0.25s;
+}
+.affix .navbar-brand {
+	background-image: url("images/logo_normal.png");
+}
+.affix li a {
+	color:#333;	
+}
+.affix li a:hover {
+	border-top: 3px solid #00a89d;
+}
+
+.navbar_custom li a:hover {
+	border-top: 3px solid white;
+    background-color: transparent!important;
+
+}
+/* Section One */
+
+
+@media (min-width : 1400px) {
+.sectionOne {	
+		background-size: 100% auto!important;
+	}
+}
+
+.sectionOne {
+	background: url("images/hero_img.jpg") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.hero_module {
+	text-align: center;
+  	position: relative;
+  	top: 30%;
+  	-webkit-transform: translateY(-50%);
+  	-ms-transform: translateY(-50%);
+  	-o-transform: translateY(-50%);
+  	transform: translateY(-50%);
+}
+.hero_module .btn {
+	margin-top: 2em;
+}
+#hero_img {
+	left: 50%;
+    -webkit-transform:  translateX(-50%);
+    -ms-transform:  translateX(-50%);
+    -o-transform:  translateX(-50%);
+    transform:  translateX(-50%);
+    position: absolute;
+    bottom: -3em;
+}
+#hero_img:hover {
+	bottom: 0em;	
+	-webkit-transition: bottom 0.25s;
+	-o-transition: bottom 0.25s;
+	transition: bottom 0.25s;
+}
+
+.sectionSummary {
+	text-align: center;
+	padding-top: 10em;
+	padding-bottom: 10em;		
+	border-bottom: 1px solid #e6e6e6;
+
+}
+.sectionSummary h1, .sectionSummary h2 {
+	color: #333;
+}
+
+/* Section Two */
+.sectionTwo { 
+	border-bottom: 1px solid #e6e6e6;
+	background-color: #f4f4f4;		
+}
+/* Section Three */
+.sectionThree { 
+
+	border-bottom: 1px solid #e6e6e6;
+}
+/* Section Four */
+.sectionFour { 
+	border-bottom: 1px solid #e6e6e6;
+	background-color: #f4f4f4;		
+}
+/* Section Five */
+.sectionFive {
+	text-align: center;
+	/*background-color: #f4f4f4;*/
+	padding-top: 10em;
+	padding-bottom: 10em;	
+	/*border-bottom: 1px solid #e6e6e6;*/
+}
+.sectionSix {
+	background-color: #00a89d;
+	text-align: center;	
+	padding-top: 10em;
+	padding-bottom: 10em;	
+}
+.sectionSix h2 {
+	margin-bottom: 2em;
+}
+.feature_wrapper div {
+	margin-bottom: 3em;	
+}
+
+/* footer */
+
+footer {
+	text-align: center;
+	padding-top: 1em;
+	padding-bottom: 1em;
+	font-weight: 300;	
+	background-color: #f4f4f4;		
+}
+
+footer a {
+	color: black;
+}
+
